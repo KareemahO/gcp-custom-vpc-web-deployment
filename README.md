@@ -1,9 +1,15 @@
 # gcp-custom-vpc-web-deployment
 Deploying a static website on Google Cloud using a custom VPC, Compute Engine, Linux, and Nginx.
-Project Overview
-This project demonstrates the deployment of a static website on Google Cloud using a custom Virtual Private Cloud (VPC). The infrastructure includes a custom VPC with separate public and private subnets, a Compute Engine virtual machine, VPC firewall rules, and an Nginx web server. The website will be deployed on the VM and accessed through its external IP address.
+
+# Project Overview
+This project demonstrates the deployment of a static website on Google Cloud using a custom Virtual Private Cloud (VPC). 
+
+The infrastructure includes a custom VPC with separate public and private subnets, a Compute Engine virtual machine, VPC firewall rules, and an Nginx web server. The website will be deployed on the VM and accessed through its external IP address.
+
+
 The project focuses on understanding network segmentation, IPv4 addressing, cloud networking, Linux administration, firewall configuration, and basic web server deployment.
-Objectives
+# Objectives
+
 Create and configure a custom VPC network.
 Design public and private subnets using CIDR notation.
 Provision a Compute Engine virtual machine.
@@ -12,8 +18,8 @@ Install and configure Nginx on Ubuntu.
 Deploy a static website.
 Verify website accessibility.
 Practise cloud resource management and cost-conscious infrastructure cleanup.
-Architecture
-The planned architecture is:
+# Architecture
+           
                     INTERNET
                         |
                         |
@@ -26,8 +32,9 @@ The planned architecture is:
                       Nginx
                         |
                  Website Files
+                 
 The VPC contains two subnets:
-kareemah-web-vpc
+# kareemah-web-vpc
        |
        |--- public-subnet
        |      10.10.1.0/24
@@ -36,7 +43,10 @@ kareemah-web-vpc
        |--- private-subnet
               10.10.2.0/24
               Reserved for private resources
-              Technologies
+              
+              
+# Technologies
+              
 Google Cloud Platform (GCP)
 Virtual Private Cloud (VPC)
 IPv4 and CIDR notation
@@ -49,48 +59,30 @@ Implementation Progress
 Stage
 Task
 Status
-1
-Create custom VPC
+1. Create custom VPC
 Completed
-2
-Create public and private subnets
+2. Create public and private subnets
 Completed
-3
-Provision Compute Engine VM
+3. Provision Compute Engine VM
 Pending
-4
-Configure firewall rules
+4. Configure firewall rules
 Pending
-5
-Install Nginx
+5. Install Nginx
 Pending
-6
-Deploy website files
+6. Deploy website files
 Pending
-7
-Test website accessibility
+7. Test website accessibility
 Pending
-8
-Clean up billable resources
-Pending
-Network Configuration
-Resource
-Configuration
-VPC name
-kareemah-web-vpc
-Subnet creation mode
-Custom
-Public subnet
-public-subnet
-Public subnet range
-10.10.1.0/24
-Private subnet
-private-subnet
-Private subnet range
-10.10.2.0/24
-Region
-us-central1
-Key Concepts
+8. Clean up billable resources
+
+# Network Configuration
+Resource Configuration
+VPC name: kareemah-web-vpc
+Subnet creation mode: Custom
+Public subnet range: 10.10.1.0/24
+Private subnet range: 10.10.2.0/24
+Region: us-central1
+# Key Concepts
 This project explores the following concepts:
 VPC: A logically isolated network environment for cloud resources.
 Subnetting: Dividing an IP address range into smaller network ranges.
